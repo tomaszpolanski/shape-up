@@ -25,11 +25,11 @@ addons:
       - libstdc++6
       - fonts-droid
 before_script:
-  - cd .. && git clone https://github.com/flutter/flutter.git && ls && pwd && export PATH=`pwd`/flutter/bin:`pwd`/flutter/bin/cache/dart-sdk/bin:$PATH
+  - cd .. 
+  - git clone https://github.com/flutter/flutter.git 
+  - export PATH=`pwd`/flutter/bin:`pwd`/flutter/bin/cache/dart-sdk/bin:$PATH
 script:
   - cd shape-up
-  - pwd
-  - ls
   - flutter doctor
   - flutter analyze
   - flutter test
