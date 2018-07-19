@@ -15,7 +15,7 @@ before_script:
   - export PATH=`pwd`/flutter/bin:`pwd`/flutter/bin/cache/dart-sdk/bin:$PATH
 script:
   - pwd
-  - flutter analyze
+  - dartanalyzer ./lib
   - flutter test
 
 cache:
