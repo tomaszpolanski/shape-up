@@ -11,11 +11,9 @@ addons:
       - fonts-droid
 
 before_script:
-  - cd ..
-  - pwd
-  - git clone https://github.com/flutter/flutter.git
-  - export PATH=`pwd`/flutter/bin:`pwd`/flutter/bin/cache/dart-sdk/bin:$PATH
+  - cd .. && git clone https://github.com/flutter/flutter.git && export PATH=`pwd`/flutter/bin:`pwd`/flutter/bin/cache/dart-sdk/bin:$PATH
 script:
+  - flutter doctor
   - flutter analyze
   - flutter test
 
