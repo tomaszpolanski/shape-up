@@ -17,7 +17,7 @@ script:
   - pwd
   - ls
   - flutter doctor
- # - flutter analyze
+  - flutter analyze
   - flutter test
 
 cache:
