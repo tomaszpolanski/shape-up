@@ -13,6 +13,7 @@ addons:
 before_script:
   - cd .. && git clone https://github.com/flutter/flutter.git && ls && pwd && export PATH=`pwd`/flutter/bin:`pwd`/flutter/bin/cache/dart-sdk/bin:$PATH
 script:
+  - cd shape-up
   - pwd
   - ls
   - flutter doctor
